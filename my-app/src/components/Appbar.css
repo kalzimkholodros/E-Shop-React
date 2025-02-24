@@ -1,0 +1,90 @@
+.appbar {
+  background-color: white !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  min-height: 64px !important;
+}
+
+.toolbar-content {
+  display: flex;
+  align-items: center;
+  padding: 0 20px !important;
+  min-height: 64px !important;
+}
+
+.logo-text {
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  text-decoration: none;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 100%;
+}
+
+.nav-buttons .MuiButton-root {
+  text-transform: none;
+  color: var(--text-primary);
+  font-weight: 500;
+  padding: 4px 12px;
+  position: relative;
+  height: 32px;
+}
+
+.auth-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 36px !important; /* Yüksekliği biraz artır */
+  padding: 6px 16px !important;
+  border-radius: 8px !important;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: white !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease-in-out;
+  border: none !important;
+}
+
+.auth-button:hover {
+  background: linear-gradient(45deg, #feb47b, #ff7e5f);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.logout-button {
+  font-size: 0.875rem !important;
+  padding: 4px 12px !important;
+  margin-left: 8px !important;
+  height: 32px !important;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--error-color);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 10px;
+  transform: translate(50%, -50%);
+}
+
+.nav-buttons .MuiButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 768px) {
+  .nav-buttons .MuiButton-startIcon {
+    margin-right: 0;
+  }
+  
+  .nav-buttons .MuiButton-root span:not(.MuiButton-startIcon) {
+    display: none;
+  }
+} 

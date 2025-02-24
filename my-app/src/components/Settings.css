@@ -1,0 +1,89 @@
+.settings-container {
+  padding: 2rem 0;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.settings-paper {
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.settings-title {
+  color: #2c3e50;
+  font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+}
+
+.settings-section {
+  margin: 2rem 0;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #34495e;
+  margin-bottom: 1.5rem !important;
+}
+
+.section-divider {
+  margin: 2rem 0 !important;
+}
+
+.notification-setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.save-button {
+  margin-top: 1.5rem !important;
+  background: linear-gradient(45deg, #2ecc71, #27ae60) !important;
+  text-transform: none !important;
+}
+
+.save-button:hover {
+  background: linear-gradient(45deg, #27ae60, #219a52) !important;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 0.8rem !important;
+  text-transform: none !important;
+}
+
+.success-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .settings-paper {
+    padding: 1rem;
+  }
+  
+  .settings-title {
+    font-size: 1.8rem !important;
+  }
+  
+  .section-title {
+    font-size: 1.2rem !important;
+  }
+} 

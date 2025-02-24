@@ -1,0 +1,71 @@
+/* src/components/Login.css */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+
+.login-paper {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(139, 115, 85, 0.1);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.login-paper:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem !important;
+  color: #2c3e50;
+  font-weight: 600 !important;
+}
+
+.login-form {
+  margin-top: 1rem;
+}
+
+.input-field {
+  margin-bottom: 1rem !important;
+}
+
+.input-field input {
+  padding: 15px;
+}
+
+.login-button {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) !important;
+  text-transform: none !important;
+  margin-top: 2rem !important;
+  padding: 12px !important;
+  font-size: 1.1rem !important;
+  box-shadow: 0 3px 5px 2px rgba(33, 203, 243, .3);
+  transition: all 0.3s ease;
+}
+
+.login-button:hover {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) !important;
+  transform: scale(1.02);
+}
+
+.login-button:disabled {
+  background: #cccccc !important;
+}
+
+@media (max-width: 600px) {
+  .login-paper {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.8rem !important;
+  }
+}
+  

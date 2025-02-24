@@ -1,0 +1,98 @@
+.favorites-container {
+  padding: 2rem 0;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.favorites-title {
+  color: #2c3e50;
+  font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.favorites-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(45deg, #2196F3, #1976D2);
+  border-radius: 2px;
+}
+
+.empty-favorites {
+  text-align: center;
+  padding: 3rem;
+}
+
+.empty-favorites-icon {
+  font-size: 4rem !important;
+  color: #bdc3c7;
+  margin-bottom: 1rem;
+}
+
+.empty-favorites-text {
+  color: #7f8c8d;
+  margin-bottom: 1rem !important;
+}
+
+.favorites-grid {
+  margin-top: 1rem;
+}
+
+.favorite-card {
+  position: relative;
+}
+
+.remove-favorite {
+  position: absolute !important;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  padding: 5px !important;
+  min-width: unset !important;
+  border-radius: 50% !important;
+  z-index: 1;
+}
+
+.remove-favorite:hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+  color: #e74c3c !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.favorite-card {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@media (max-width: 600px) {
+  .favorites-container {
+    padding: 1rem;
+  }
+  
+  .favorites-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .empty-favorites {
+    padding: 2rem;
+  }
+  
+  .empty-favorites-icon {
+    font-size: 3rem !important;
+  }
+} 

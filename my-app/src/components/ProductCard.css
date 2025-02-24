@@ -1,0 +1,117 @@
+.product-card {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  margin: auto;
+  background: white;
+  border: 1px solid var(--border-color);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(139, 115, 85, 0.15);
+  border-color: var(--primary-color);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4757;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.product-image {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  height: 180px !important;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: var(--text-primary);
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-container {
+  margin: 1rem 0;
+}
+
+.original-price {
+  color: #777;
+  text-decoration: line-through;
+  margin-right: 0.5rem;
+}
+
+.current-price {
+  color: var(--accent-color) !important;
+  font-weight: 600 !important;
+}
+
+.add-to-cart-button {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)) !important;
+  text-transform: none !important;
+  margin-top: auto !important;
+  transition: all 0.3s ease !important;
+}
+
+.add-to-cart-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .product-title {
+    font-size: 1rem !important;
+  }
+  
+  .current-price {
+    font-size: 1.1rem !important;
+  }
+}
+
+.product-image-container {
+  position: relative;
+}
+
+.favorite-button {
+  position: absolute !important;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  padding: 8px !important;
+}
+
+.favorite-button:hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+} 

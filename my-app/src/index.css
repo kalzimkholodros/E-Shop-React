@@ -1,0 +1,26 @@
+:root {
+  --primary-color: #8B7355; /* Bej tonlu kahve */
+  --secondary-color: #D2B48C; /* Açık bej */
+  --background-color: #FAF9F6; /* Off-white */
+  --text-primary: #2C3E50; /* Koyu lacivert */
+  --text-secondary: #34495E; /* Orta lacivert */
+  --accent-color: #A0522D; /* Koyu kahve */
+  --error-color: #D98880; /* Soft kırmızı */
+  --success-color: #82B5A5; /* Soft yeşil */
+  --border-color: #E8E8E8; /* Açık gri */
+  --hover-color: #F5F5F5; /* Çok açık gri */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
